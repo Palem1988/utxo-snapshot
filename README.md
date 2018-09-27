@@ -1,18 +1,35 @@
 # ANON UTXO SNAPSHOT
 **DATE: 09.10.2018 TIME: 11:00 PM (EST)**
 
+Note: you don't have to download the utxo snapshot files in order to run a full node. It is OPTIONAL.
+
+These are the files that were used to create airdropped blocks.  
+If you want to validate blocks that are in the airdropped region (blocks 4 - 16,740) against these file records, this is how you do it:
+1. Download and unzip it (location does't matter).
+2. Add to your anon.conf file the following:
+```
+utxo-path="full path to your unziped folder"
+```
+
+3. Restart your node with -reindex.
+
+4. During the -reindex Anon node will perform blocks validation against these file records. It will not accept any blocks that do not pass the validation. 
+
+Note: This can take up to 8-10 hours.
+
+**Details:**
+
 FINAL ANON MAINNET SNAPSHOT
   ```
      Bitcoin funds        [00001 - 09892]  - 9892 files (5000 utxo per file)
      Zclassic t-funds     [09893 - 10131]  -  239 files (5000 utxo per file)
      Zclassic z-funds     [10132 - 16737]  - 6606 files (50 joinsplits per file) 
   ```
-[DOWNLOAD](https://www.dropbox.com/s/e69zpk5tp7oyfp6/anon-utxo-snapshot.zip?dl=0)
+[DOWNLOAD](https://assets.anonfork.io/anon-utxo-snapshot.zip)
 
 Raw link: 
-https://www.dropbox.com/s/e69zpk5tp7oyfp6/anon-utxo-snapshot.zip?dl=0
+https://assets.anonfork.io/anon-utxo-snapshot.zip
 
-**Details:**
 
 ```
 BITCOIN (upto block 540,870)
